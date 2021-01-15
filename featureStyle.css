@@ -1,0 +1,168 @@
+/*Features Tab CSS*/
+
+*{
+	padding: 0;
+	margin: 0;
+
+}
+
+body {
+		background-image: url("wall.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+
+}
+
+.wrapper{
+
+	background-image: url("wall.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+
+.navbar{
+	position: fixed;
+	height: 80px;
+	z-index: 1;
+	width: 100%;
+	user-select: none;
+	background-color: rgba(0,0,0,0.7);
+	transition: top 0.3s;
+}
+
+.logo {
+	width: 360px;
+	height: auto;
+	padding: 20px 100px;
+}
+
+.navbar ul{
+	float: right;
+	margin-right: 20px;
+	
+	
+}
+
+.navbar ul li{
+	list-style: none;
+	margin: 0 8px;
+	display: inline-block;
+	line-height: 80px;
+}
+
+.navbar ul li a{
+	text-decoration: none;
+	color: white;
+	user-select: none;
+	padding: 6px;
+	font-size: 20px;
+	font-family: 'Marko One', serif;
+	transition: .4s;
+}
+
+@media only screen and (max-width: 1200px) {
+
+	.logo{
+		width: 240px;
+	}
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+
+    .navbar ul li a{
+        font-size: 15px;
+        padding: 0;
+    }
+}
+
+.active,
+.navbar ul li a:hover{
+	color:#ffae00; 
+	text-shadow: 2px 2px 8px #ffae00;
+}
+
+.wrapper .center{
+	position: relative;
+/*	top: 0%;*/
+	bottom: 5%;
+	left: 22%;
+	transform: translate(-50%, 50%);
+	font-family: 'Marko One', serif;
+	user-select: none;
+	margin-bottom: 30%;
+}
+
+.center h1{
+	position: relative;
+	left: 30%;
+	color: white;
+	font-size: 2em;
+	width: 500px;
+	text-align: center;
+	text-shadow: 2px 2px 10px #a15300;
+}
+
+.htag h3{
+	position: absolute;
+	left: 30%;
+	color: white;
+	text-shadow: 2px 2px 10px #a15300;
+	font-family: 'Philosopher', sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	width: 40%;
+	text-align: center;
+}
+
+.htag h2{
+	position: absolute;
+	left: 30%;
+	color: #ffaa00;
+	font-family: 'Philosopher', sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	width: 40%;
+	text-align: center;	
+}
+
+.center .buttons{
+	margin: 10% 14% 10% 17%;
+}
+
+.buttons button{
+	position: relative;
+	height: 50px;
+	width: 150px;
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+	background: none;
+	border: 1px solid black;
+	border-radius: 5px;
+	outline: none;
+	cursor: pointer;
+	
+	transition: 0.6s;
+}
+
+.buttons .btn{
+	margin-left: 25px;
+}
+
+.buttons button a{
+	text-decoration: none;
+	color: white;
+}
+
+.buttons button:hover{
+	/*background: grey;*/
+	border-color: #a15300;
+	text-shadow: 2px 2px 10px #a15300;
+	color: white;
+
+}/*#a15300*/
